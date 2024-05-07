@@ -85,7 +85,8 @@ section, if you get a game over, you'll lose all items which means you'll have t
 | ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/shopStyle.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/shopALBW.gif) |
 
 ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/meterRefillDrops.PNG)
-![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/expand.png)
+
+![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/expand.PNG)
 
 If you wish to inject the mod into an existing Wii save instead of generating an empty save, you can use the `nandpack.py` script to do that. Here is an example:
 
