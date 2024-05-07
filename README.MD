@@ -71,9 +71,11 @@ section, if you get a game over, you'll lose all items which means you'll have t
 | Slingshot                            | Armor                            |
 | ----------------------------------- | ----------------------------------- |
 | ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/slingShot.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/Armor.gif) |
+
 | Spinner                            | Dominion Rod                            |
 | ----------------------------------- | ----------------------------------- |
 | ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/spinner.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/DominionRod.gif) |
+
 | Bomblings                            | Ball and Chain                            |
 | ----------------------------------- | ----------------------------------- |
 | ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/bombling.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/ball.gif) |
@@ -82,8 +84,8 @@ section, if you get a game over, you'll lose all items which means you'll have t
 | ----------------------------------- | ----------------------------------- |
 | ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/shopStyle.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/shopALBW.gif) |
 
-![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/meter refill drops.PNG)
-![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/meter expansion.png)
+![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/meterRefillDrops.PNG)
+![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/expand.png)
 
 If you wish to inject the mod into an existing Wii save instead of generating an empty save, you can use the `nandpack.py` script to do that. Here is an example:
 
