@@ -1,11 +1,11 @@
 /**
  * @file main.h
- * @author your name (you@domain.com)
- * @brief
- * @version 0.1
- * @date YYYY-MM-DD
+ * @author Captain Kitty Cat (youtube.com/@captainkittyca2)
+ * @brief Read main.cpp's brief.
+ * @version 1.0
+ * @date 2024-05-07
  *
- * @copyright Copyright (c) YYYY
+ * @copyright Copyright (c) 2024
  *
  */
 #pragma once
@@ -20,22 +20,8 @@
 
 #include <cinttypes>
 
-#define GAME_BOOT 0
-#define GAME_TITLE 1
-#define GAME_ACTIVE 2
 namespace mod
 {
-    /***********************************************************************************
-     * We're creating a cusutom REL file and thus the real main function already ran
-     * before we even load this program.
-     * That's also why we create a custom namespace to avoid confusing the compiler with the actual main function
-     * whilst still having a neat starting function for you to begin your Twilight Princess mod development!
-     * Note:
-     * If you want to change the namespace "mod" you will have to make adjustments to rel.cpp in libtp_rel!
-     *
-     * This main function is going to be executed once at the beginning of the game,
-     * assuming the REL got loaded in the first place.
-     ***********************************************************************************/
     void main();
     class Mod
     {
@@ -48,7 +34,6 @@ namespace mod
         int trimer;
         // Console
         libtp::display::Console c;
-        // "trampoline/return" function to the original function that we hook in order to proc our NewFrame function
         void ( *onUI)(libtp::tp::d_meter2_draw::dMeter2Draw_c* dMeterDrawPtr) = nullptr;
         void ( *offUI)(libtp::tp::d_meter2_draw::dMeter2Draw_c* dMeterDrawPtr) = nullptr;
         void ( *makingArrow)(libtp::tp::d_a_alink::daAlink* linkActrPtr) = nullptr;
