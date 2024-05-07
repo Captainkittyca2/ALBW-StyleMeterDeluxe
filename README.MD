@@ -4,7 +4,7 @@
 A "Twilight Princess" mod that provides the game with core mechanics from "A Link Between Worlds", a 3DS Zelda game.
 
 `Currently only supports TP GC US and TP Wii US 1.2`
-![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/ALBW.png)
+![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/ALBW.png)
 
 ## All Feature Include:
 ### Items Utilizing Oil Meter
