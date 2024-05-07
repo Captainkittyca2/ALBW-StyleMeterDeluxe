@@ -4,6 +4,7 @@
 A "Twilight Princess" mod that provides the game with core mechanics from "A Link Between Worlds", a 3DS Zelda game.
 
 `Currently only supports TP GC US and TP Wii US 1.2`
+
 ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/ALBW.png)
 
 ## All Feature Include:
@@ -53,36 +54,36 @@ section, if you get a game over, you'll lose all items which means you'll have t
 ### Bow
 | Twilight Princess                            | A Link Between Worlds                            |
 | ----------------------------------- | ----------------------------------- |
-| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/bowStyle.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/bowALBW.gif) |
+| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/bowStyle.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/bowALBW.gif) |
 ### Bombs
 | Twilight Princess                            | A Link Between Worlds                            |
 | ----------------------------------- | ----------------------------------- |
-| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/bombStyle.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/bombALBW.gif) |
+| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/bombStyle.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/bombALBW.gif) |
 ### ClawShot/HookShot
 | Twilight Princess                            | A Link Between Worlds                            |
 | ----------------------------------- | ----------------------------------- |
-| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/clawStyle.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/hookALBW.gif) |
+| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/clawStyle.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/hookALBW.gif) |
 ### Boomerang
 | Twilight Princess                            | A Link Between Worlds                            |
 | ----------------------------------- | ----------------------------------- |
-| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/boomStyle.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/boomALBW.gif) |
+| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/boomStyle.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/boomALBW.gif) |
 ### More
 | Slingshot                            | Armor                            |
 | ----------------------------------- | ----------------------------------- |
-| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/slingShot.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/Armor.gif) |
+| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/slingShot.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/Armor.gif) |
 | Spinner                            | Dominion Rod                            |
 | ----------------------------------- | ----------------------------------- |
-| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/spinner.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/DominionRod.gif) |
+| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/spinner.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/DominionRod.gif) |
 | Bomblings                            | Ball and Chain                            |
 | ----------------------------------- | ----------------------------------- |
-| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/bombling.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/ball.gif) |
+| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/bombling.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/ball.gif) |
 ### Item Renting
 | Twilight Princess                            | A Link Between Worlds                            |
 | ----------------------------------- | ----------------------------------- |
-| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/shopStyle.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/shopALBW.gif) |
+| ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/shopStyle.gif) | ![image](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/shopALBW.gif) |
 
-![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/meter refill drops.PNG)
-![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/main/ImagesAndGIFs/meter expansion.png)
+![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/meter refill drops.PNG)
+![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/meter expansion.png)
 
 If you wish to inject the mod into an existing Wii save instead of generating an empty save, you can use the `nandpack.py` script to do that. Here is an example:
 
