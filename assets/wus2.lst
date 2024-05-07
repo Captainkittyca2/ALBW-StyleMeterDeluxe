@@ -22,6 +22,16 @@
 // data
 804419e0:MemCardWorkArea0
 
+800335d4:setSelectEquipClothes
+
+80521088:mAudioMgrPtr
+
+8028fe00:z2SeMgr_seStart
+
+80290bfc:z2SeMgr_seStartLevel
+
+80191a5c:kantera_iconDraw
+
 // d_stage
 8002ae74:roomTresureInit
 8002bfbc:setTresure
@@ -31,6 +41,10 @@
 8002a1f0:actorCommonLayerInit
 8002a4d0:tgscInfoInit
 8002b2bc:roomLoader
+8002b938:changeScene
+
+80250c84:cXyzMultiply
+80250d0c:cXyzAdd
 
 // data
 80520878:AssertHeap
@@ -54,16 +68,22 @@
 80038690:onCollectMirror
 80038654:onCollectCrystal
 80037850:setItem
+8003833c:onFirstBit
 80038d38:isDungeonItem
 80038da4:isEventBit
 80038c18:onSwitch_dSv_memBit
 80038c68:isSwitch_dSv_memBit
+800373e0:getSelectItemIndex
 800378c4:setLineUpItem
 80038770:onLightDropGetFlag
+8003a090:getItem
 
 // d_event.o
 80045914:defaultSkipStb
 80045b64:skipper
+
+// d_pane_class.o
+8023fdd4:setBlackWhite
 
 // DynamicLink.o
 8024d12c:do_link
@@ -88,13 +108,14 @@
 
 // f_op_actor_mng.o
 8001f954:fopAcM_create
+800208f4:fopAcM_orderTalkEvent
 80021410:createItemForPresentDemo
 8002149c:createItemForTrBoxDemo
 80021968:createItemForBoss
 80021a28:createItemForMidBoss
 80021a74:createItemForDirectGet
 8001f764:CreateAppend
-8001f954:fopAcM_create
+8001f9c8:fopAcM_fastCreate
 
 // f_pc_node_req
 804689e8:l_fpcNdRq_Queue
@@ -114,16 +135,49 @@
 803f18dc:field_item_res
 800345f4:item_info
 
-// d_a_alink.h
+80071784:LockOnTarget
+
+// d_a_alink.o
+800a3e04:getMainBckData
+800a490c:setSingleAnime
 800a98d0:setStickData
+800b0844:itemUnequip
 800b2580:checkNextActionFromCrouch
 800b2a54:checkHeavyStateOn
+800b656c:setItemActor
+800b9b6c:commonProcInitNotSameProc
+800b71d4:checkCastleTownUseItem
+800b8c50:commonProcInit
 800bccb0:procAutoJumpInit
 800bd050:procAutoJump
 800bd560:procDiveJumpInit
 800bd628:procDiveJump
+800bd8e4:procFallInit
+800bdf8c:procSmallJumpInit
 800be504:procCrouchInit
 800be574:procCrouch
+800bf690:execute_
+800c6584:checkHorseRide
+800c6670:checkBoomerangReadyAnime
+800c6748:checkSpinnerRide
+800ce07c:setDamagePoint
+800cfc44:procDamageInit
+800d341c:checkUpperGuardAnime
+800d35d4:setShieldGuard
+800d4cdc:makeArrow
+800d4d84:deleteArrow
+800d6588:checkBoomerangLockAccept
+800d695c:checkBoomerangThrowAnime
+800d6bf8:throwBoomerang
+800d78c0:procBoomerangMoveInit
+800d7bbc:getCopyRodControllActor
+800d7c64:checkCopyRodTopUse
+800d80d4:throwCopyRod
+800d822c:returnCopyRod
+800d8b08:procCopyRodSwingInit
+800da03c:setGrabUpperAnime
+800da1d0:checkGrabRooster
+800db7f0:setGrabItemActor
 800eec58:procCrawlStartInit
 800eedc0:procCrawlStart
 800eeea8:procCrawlMoveInit
@@ -132,11 +186,19 @@
 800ef4d8:procCrawlAutoMove
 800ef784:procCrawlEndInit
 800ef92c:procCrawlEnd
+80101ea8:checkSpinnerTriggerAttack
+80108e5c:checkUpperItemActionIronBall
+80109500:procIronBallThrowInit
+8010c6a4:setDemoBodyBck
 8010e150:checkTreasureRupeeReturn
 80112420:procGanonFinishInit
 801124a4:procGanonFinish
+80113bd4:procCoWarp
+80128010:procWolfDamageInit
 80131680:setClothesChange
+80148f7c:checkBombItem
 //806d4cd8:dComIfGs_isEventBit
+803ceb00:something
 803d4494:getSeType
 80096b4c:checkStageName
 800c8f74:checkDownAttackState
@@ -144,7 +206,12 @@
 8010a590:checkEventRun
 //8044B5CC:linkStatus
 800d8ed8:checkBootsMoveAnime
+800d36bc:offNoResetFlg2
 8010d904:procCoTalkInit
+803cf504:jumpStuff
+803d1110:m_anmDataTable
+8009f26c:offNoResetFlg2
+804ae620:sincosTable_
 
 // data
 803d0028:climbVars
@@ -155,20 +222,89 @@
 // d_menu_collect.o
 801979d8:setWalletMaxNum
 
+// d_menu_ring.o
+801d2198:drawItem
+801d2684:drawItem2
+
+// d_menu_window.o
+801d38c8:getItemNum
+801dfdf4:dMw_DOWN_TRIGGER
+801dfe7c:dMw_RIGHT_TRIGGER
+801dff80:dMw_START_TRIGGER
+
+// d_menu_window_HIO.o
+801df910:getBombFlag
+801df918:getArrowFlag
+801df920:getPachinkoFlag
+804a2884:g_mwHIO
+
 // d_meter2.o
+8020be44:moveLife
 8020c268:moveKantera
+80210cb4:moveBombNum
+802111d8:moveArrowNum
+802115dc:movePachinkoNum
+80211950:alphaAnimeKantera
+80211de4:alphaAnimeButton
+8021223c:alphaAnimeButtonCross
+802127d0:isArrowEquip
+80212888:isPachinkoEquip
+80212a08:_create
+
+// d_meter2_draw.o
+801fcedc:setAlphaLifeAnimeMin
+801fcf3c:setAlphaLifeAnimeMax
+801fd788:setAlphaKanteraAnimeMin
+801fd800:setAlphaKanteraAnimeMax
+801fcf9c:drawKanteraScreen
+801fd54c:drawKantera
+801ff74c:drawButtonR
+801ffc80:drawButtonNunZ
+80200724:setAlphaButtonCrossAnimeMax
+80201978:setAlphaButtonAnimeMax
+80203600:setItemNum
+8020392c:drawItemNum
+80203c48:isButtonVisible
+
+// d_meter_HIO.o
+804a2be0:g_drawHIO
 
 // JKRHeap.o
 802cd510:__nw_JKRHeap
 802cd544:__dl_JKRHeap
 
+802d4440:JKRArchivePub_getGlbResource
+
+8018099c:dispWait_init
+80180b58:saveMove_proc
+80180d44:deleteWait_init
+
+800299e8:dStage_playerInit
+
+80038634:isCollect
+
+80038368:offFirstBit
+
+8052099c:mStayNo
+
 // JKRExpHeap.o
 802cd988:do_alloc_JKRExpHeap
 802ce014:do_free_JKRExpHeap
 
+// m_Re_controller_pad.o
+8024d7fc:cAPICPad_DOWN_TRIGGER
+8024d80c:cAPICPad_RIGHT_TRIGGER
+8024d85c:cAPICPad_X_TRIGGER
+
 // OSCache.o
 80330c3c:ICInvalidateRange
 80330b58:DCFlushRange
+
+// os.o
+800000F8:__OSBusClock
+
+// OSTime.o
+80339f4c:OSGetTime
 
 // runtime.o
 803a8b54:_savefpr_14
@@ -258,7 +394,16 @@
 80038394:isFirstBit
 //804929f4:player_get_item
 80033d28:dComIfGs_Wolf_Change_Check
+80032538:dComIfGs_getSelectMixItemNoArrowIndex
+800325d8:dComIfGp_setSelectItem
 80033a78:dComIfG_getStageRes
+800324dc:dComIfGs_setSelectItemIndex
+80032520:dComIfGs_setMixItemIndex
+800325c8:dComIfGs_getMixItemIndex
+80032688:dComIfGp_getSelectItem
+80032ca8:dComIfGp_getSelectItemNum
+80032d74:dComIfGp_getSelectItemMaxNum
+80032f1c:dComIfGp_addSelectItemNum
 
 // d_kankyo.o
 // data

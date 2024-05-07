@@ -22,15 +22,35 @@
 // data
 8045a3e0:MemCardWorkArea0
 
-// d_stage
+// stuff
+8003851c:isCollect
+800334cc:setSelectEquipClothes
+80071538:LockOnTarget
+80180280:dispWait_init
+8018043c:saveMove_proc
+80180628:deleteWait_init
+80191350:kantera_iconDraw
+801e06f8:dMw_DOWN_TRIGGER
+8029068c:z2SeMgr_seStart
+80291488:z2SeMgr_seStartLevel
+802e9a70:JKRArchivePub_getGlbResource
+8053b068:mAudioMgrPtr
+
+// d_stage.o
 8002ad64:roomTresureInit
+8002b828:changeScene
 8002c428:setTresure
 8002983c:ActorCreate
+800298d8:dStage_playerInit
 8002a260:actorInit
 8002a31c:actorInit_always
 8002a0e0:actorCommonLayerInit
 8002a3c0:tgscInfoInit
 8002b1ac:roomLoader
+8053A994:mStayNo
+
+802515e4:cXyzMultiply
+8025155c:cXyzAdd
 
 // data
 8053a878:AssertHeap
@@ -42,9 +62,13 @@
 8053a890:j2dHeap
 
 // d_save.o
+800372c8:getSelectItemIndex
 80037314:getRupeeMax
+80038224:onFirstBit
+80038250:offFirstBit
 8003929c:getSave
 800392cc:putSave
+80039ee0:getItem
 80038bc4:onEventBit
 80038bdc:offEventBit
 80037400:isDarkClearLV
@@ -86,6 +110,7 @@
 8001e6b0:fapGm_Execute
 
 // f_op_actor_mng.o
+800207d0:fopAcM_orderTalkEvent
 800212ec:createItemForPresentDemo
 80021378:createItemForTrBoxDemo
 80021844:createItemForBoss
@@ -93,6 +118,7 @@
 80021950:createItemForDirectGet
 8001f678:CreateAppend
 8001f868:fopAcM_create
+8001f8dc:fopAcM_fastCreate
 
 // f_pc_node_req
 804813e0:l_fpcNdRq_Queue
@@ -112,7 +138,7 @@
 804065a4:field_item_res
 80407594:item_info
 
-// d_a_alink.h
+// d_a_alink.o
 800a948c:setStickData
 800b25fc:checkHeavyStateOn
 8010db44:checkTreasureRupeeReturn
@@ -121,8 +147,33 @@
 //806d4cd8:dComIfGs_isEventBit
 803e9194:getSeType
 80096734:checkStageName
-800c8a4c:checkDownAttackState
+800b03f8:itemUnequip
+800b6d6c:checkCastleTownUseItem
+800b87e8:commonProcInit
+800bd424:procFallInit
+800bdacc:procSmallJumpInit
 800be190:procCoMetamorphoseInit
+800bf1d0:execute_
+800c6148:checkBoomerangReadyAnime
+800c6220:checkSpinnerRide
+800c8a4c:checkDownAttackState
+800cdb54:setDamagePoint
+800cf71c:procDamageInit
+800d47b4:makeArrow
+800d6434:checkBoomerangThrowAnime
+800d66d0:throwBoomerang
+800d7694:getCopyRodControllActor
+800d773c:checkCopyRodTopUse
+800d7bac:throwCopyRod
+800d7d04:returnCopyRod
+800d85e0:procCopyRodSwingInit
+801018f4:checkSpinnerTriggerAttack
+80108874:checkUpperItemActionIronBall
+80108f18:procIronBallThrowInit
+8010c098:setDemoBodyBck
+801134c4:procCoWarp
+801278e0:procWolfDamageInit
+80130f54:setClothesChange
 80109fa8:checkEventRun
 //8044B5CC:linkStatus
 800d89b0:checkBootsMoveAnime
@@ -136,6 +187,45 @@
 
 // d_menu_collect.o
 801971e4:setWalletMaxNum
+
+// d_menu_ring.o
+801d2ab4:drawItem
+801d2fa0:drawItem2
+
+// d_menu_window_HIO.o
+801e0214:getBombFlag
+801e021c:getArrowFlag
+801e0224:getPachinkoFlag
+
+// d_meter2.o
+8020c69c:moveLife
+8020cac0:moveKantera
+802113b8:moveBombNum
+802118dc:moveArrowNum
+80211ce0:movePachinkoNum
+80212054:alphaAnimeKantera
+802124e8:alphaAnimeButton
+8021293c:alphaAnimeButtonCross
+80212ed0:isArrowEquip
+80212f88:isPachinkoEquip
+802130c8:_create
+
+// d_meter2_draw.o
+801fd748:setAlphaLifeAnimeMin
+801fd7a8:setAlphaLifeAnimeMax
+801fd808:drawKanteraScreen
+801fddb8:drawKantera
+801fdff4:setAlphaKanteraAnimeMin
+801fe06c:setAlphaKanteraAnimeMax
+802004cc:drawButtonNunZ
+80200f70:setAlphaButtonCrossAnimeMax
+80203e4c:setItemNum
+80204178:drawItemNum
+80204494:isButtonVisible
+
+// d_meter_HIO.o
+804bb27c:g_mwHIO
+804bb5d8:g_drawHIO
 
 // JKRHeap.o
 802e2b40:__nw_JKRHeap
@@ -195,6 +285,12 @@
 // 00000000:L2GlobalInvalidate
 // 803464c8:DMAErrorHandler
 // 80346610:__OSCacheInit
+
+// os.o
+800000F8:__OSBusClock
+
+// OSTime.o
+8034f514:OSGetTime
 
 // runtime.o
 803be11c:_savefpr_14
@@ -428,6 +524,13 @@
 801833e4:dKy_daynight_check
 8002f640:getLayerNo_common_common
 //80141264:dComIfGs_isItemFirstBit
+800323d4:dComIfGs_setSelectItemIndex
+80032418:dComIfGs_setMixItemIndex
+80032430:dComIfGs_getSelectMixItemNoArrowIndex
+800324c0:dComIfGs_getMixItemIndex
+800324d0:dComIfGp_setSelectItem
+80032ba0:dComIfGp_getSelectItemNum
+80032c6c:dComIfGp_getSelectItemMaxNum
 8003827c:isFirstBit
 //804929f4:player_get_item
 80033c20:dComIfGs_Wolf_Change_Check
@@ -453,6 +556,9 @@
 
 //JKRDvdRipper.o
 802edb68:loadToMainRAM2
+
+// d_pane_class.o
+80240690:setBlackWhite
 
 //dvdfs.o
 803615b4:DVDConvertPathToEntrynum

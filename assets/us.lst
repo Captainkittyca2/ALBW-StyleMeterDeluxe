@@ -8,13 +8,26 @@
 
 // d_stage
 800266A4:roomTresureInit
+80027170:changeScene
 80027D04:setTresure
+
+80266B84:cXyzMultiply
+80266AE4:cXyzAdd
 
 // data
 80450C34:archiveHeap
 
 // d_save.o
+80032a5c:getSelectItemIndex
 80032AA8:getRupeeMax
+80032fb8:setItem
+80033030:getItem
+80034208:isCollect
+80034918:onDungeonItem
+80034934:isDungeonItem
+8003498c:onEventBit
+800349a4:offEventBit
+800349bc:isEventBit
 800350BC:getSave
 800350F0:putSave
 
@@ -27,34 +40,228 @@
 80450614:freezeActors
 80450CE0:isLoading
 
+802d5b38:JKRArchivePub_getGlbResource
+
+80254458:setBlackWhite
+
+800beaf8:checkSceneChange
+
+8002eeb0:setSelectEquipClothes
+
+80141264:dComIfGs_isItemFirstBit
+
+8019b384:playerAnmWait_Init
+8019b40c:dispWait_init
+8019b5a8:saveMove_proc
+8019b7bc:deleteWait_init
+
+80025014:dStage_playerInit
+
+801f9f98:dMw_DOWN_TRIGGER
+801f9fac:dMw_LEFT_TRIGGER
+801f9ff4:dMw_RIGHT_TRIGGER
+801fa078:dMw_START_TRIGGER
+
+802ab984:z2SeMgr_seStart
+
+80451368:mAudioMgrPtr
+
+801aecb8:kantera_iconDraw
+
 // f_ap_game.o
 80018A6C:fapGm_Execute
 
 // f_op_actor_mng.o
+80019a2c:fopAcM_SearchByName
+80019c7c:fopAcm_delete
+80019d18:fopAcM_create
+80019e04:fopAcM_fastCreate
+8001b068:fopAcM_orderTalkEvent
+8001bb14:fopAcM_getTalkEventPartner
 8001BBE8:createItemForPresentDemo
 8001BC74:createItemForTrBoxDemo
 8001C0D4:createItemForBoss
 8001C174:createItemForMidBoss
 8001C1B8:createItemForDirectGet
 
+// f_pc_node_req
+803A3A38:l_fpcNdRq_Queue
+
+802ac50c:z2SeMgr_seStartLevel
+
 // d_map_path_dmap.o
 8003EE5C:getMapPlayerPos
 
 // d_item.o
+80097e8c:execItemGet
 80097EE0:checkItemGet
+80033e60:onFirstBit
+80033e94:offFirstBit
+80033ec8:isFirstBit
 
-// d_a_alink.h
+8007353c:LockOnTarget
+80450D64:mStayNo
+
+// d_a_alink.o
+8009da60:checkStageName
+800ad00c:setSingleAnime
 800B271C:setStickData
+800b72e4:checkItemActorPointer
+800b8930:checkReadyItem
+800b96a4:itemUnequip
+800ba0d0:checkNextAction
+800bb324:setMagicArmorBrk
 800BB4B8:checkHeavyStateOn
+800bf124:seStartOnlyReverb
+800bf9f0:setItemActor
+800c0678:checkCastleTownUseItem
+800c1f6c:commonProcInit
+800c6a48:procFallInit
+800c70f8:procSmallJumpInit
+800c8700:execute_
+800ce8a0:setBodyAngleToCamera
+800cf284:checkHorseRide
+800cf2c8:checkSpinnerRide
+800d00d0:ChkRoofHit
+800d72bc:setDamagePoint
+800dea3c:makeArrow
+800deae4:deleteArrow
+800dfd6c:procBowSubjectInit
+800dffe0:checkBoomerangLockAccept
+800e01cc:cancelBoomerangLock
+800e0244:checkBoomerangChargeEnd
+800e02b8:checkBoomerangCarry
+800e04ac:checkBoomerangThrowAnime
+800e06b8:throwBoomerang
+800e0a9c:checkUpperItemActionBoomerang
+800e0e64:setBoomerangSight
+800e0fa0:procBoomerangSubject
+800e1374:getCopyRodControllActor
+800e145c:checkCopyRodTopUse
+800e158c:setCopyRodControllAnime
+800e191c:throwCopyRod
+800e1a30:returnCopyRod
+800e1c44:checkNextActionCopyRod
+800e20c8:procCopyRodSwingInit
+800e21fc:procCopyRodSwing
+800e3dbc:setGrabUpperAnime
+800e3f20:checkGrabRooster
+800e5bb4:setGrabItemActor
+80104c50:procSwimHookshotSubjectInit
+801090ec:initHookshotUpperAnimeSpeed
+80109aac:setHookshotTopPosFly
+80109bdc:setHookshotPos
+8010baa8:procHookshotSubjectInit
+8010bc08:procHookshotMoveInit
+8010bd90:procHookshotFlyInit
+8010c9f4:procHookshotRoofWait
+8010cc80:procHookshotRoofShootInit
+8010d38c:procHookshotWallWait
+8010db28:checkSpinnerTriggerAttack
+80115254:checkUpperItemActionIronBall
+8011577c:procIronBallThrowInit
+801189f8:setDemoBodyBck
 8011A6FC:checkTreasureRupeeReturn
 8011E9F8:procGanonFinishInit
 8011EA78:procGanonFinish
+8011f7d8:dungeonReturnWarp
+8011fd4c:procCoWarpInit
+80120124:procCoWarp
+80126f3c:changeLink
+8014112c:offNoResetFlg0
+8014136c:offNoResetFlg2
+801413cc:checkWolf
+80141404:ChkGroundHit
+8014189c:checkHookshotShootReturnMode
+80141988:setLinkState
+8015ea48:checkBombItem
+8015f2fc:setSight
+8015f89c:checkBoomerangCharge
+800BAF08:checkNextActionFromCrouch
+800c2da4:commonProcInitNotSameProc
+800C7690:procCrouchInit
+800C77F4:procCoMetamorphoseInit
+800d8f3c:procDamageInit
+800ac450:getMainBckData
+800c5e68:procAutoJumpInit
+800c66dc:procDiveJumpInit
+800dcdf0:checkUpperGuardAnime
+800dd018:setShieldGuard
+800e1060:procBoomerangMoveInit
+801360ec:procWolfDamageInit
+80140038:setClothesChange
+8038d664:something
+8038e068:jumpStuff
+8038e658:bowVars
+8038fca8:m_anmDataTable
+80439a20:sincosTable_
+
+// d_a_obj_item.o
+8015c200:procInitGetDemoEvent
+
+// d_a_player.o
+80451018:m_midnaActor
 
 // data
 8038EB8C:ladderVars
 
 // d_menu_collect.o
 801B3340:setWalletMaxNum
+
+// d_menu_ring
+801ecb14:drawItem
+801ecf9c:drawItem2
+801ee058:getItemNum
+
+// d_menu_window.o
+801fa03c:dMw_A_TRIGGER
+801fa050:dMw_B_TRIGGER
+
+// d_menu_window_HIO.o
+801f9e14:getBombFlag
+801f9e1c:getArrowFlag
+801f9e24:getPachinkoFlag
+8042e86c:g_mwHIO
+
+// d_meter2.o
+8021ea14:_create
+8021FD60:moveLife
+80220180:moveKantera
+80223e00:moveBombNum
+80224354:moveArrowNum
+80224680:movePachinkoNum
+80224a04:alphaAnimeKantera
+80224bac:alphaAnimeOxygen
+802250f4:alphaAnimeButton
+802259f8:isArrowEquip
+80225a64:isPachinkoEquip
+
+// d_meter2_draw.o
+80214df4:setAlphaLifeAnimeMin
+80214e54:setAlphaLifeAnimeMax
+802156e0:setAlphaKanteraAnimeMin
+8021575c:setAlphaKanteraAnimeMax
+80215a18:setAlphaOxygenAnimeMin
+80215a94:setAlphaOxygenAnimeMax
+80214eb4:drawKanteraScreen
+802154a8:drawKantera
+8021764c:drawButtonR
+802190a8:setAlphaButtonAnimeMax
+80219e98:setButtonIconAlpha
+8021a2f4:getActionString
+8021ab84:setItemNum
+8021aec8:drawItemNum
+8021b0c8:isButtonVisible
+
+// d_meter2_info.o
+8021ca70:warpOutProc
+80430188:g_meter2_info
+
+// processor.o
+802a7c54:getResource_groupID
+
+// d_meter_HIO.o
+8042ebc8:g_drawHIO
 
 // JKRHeap.o
 802CEC98:__nw_JKRHeap
@@ -84,6 +291,12 @@
 // 8033B8F8:L2GlobalInvalidate
 // 8033B990:DMAErrorHandler
 // 8033BAF0:__OSCacheInit
+
+// os.o
+800000F8:__OSBusClock
+
+// OSTime.o
+803426fc:OSGetTime
 
 // runtime.o
 80362108:_savefpr_14
@@ -142,8 +355,22 @@
 803DD2E8:cpadInfo
 
 // d_com_inf_game.o
+8002dcc4:dComIfGs_setSelectItemIndex
+8002dd08:dComIfGs_setMixItemIndex
+8002ddf4:dComIfGp_setSelectItem
+8002dd3c:dComIfGs_getSelectMixItemNoArrowIndex
+8002ddc8:dComIfGs_getMixItemIndex
+8002e83c:dComIfGp_addSelectItemNum
+8002e5c0:dComIfGp_getSelectItemNum
+8002e688:dComIfGp_getSelectItemMaxNum
 // data
 804061C0:dComIfG_gameInfo
+
+// control.o
+80233d04:setMessageIndex
+802a77e8:setMessageCode
+802a7a20:setMessageCode_inSequence
+802a8944:process_setMessageCode
 
 // d_kankyo.o
 // data
