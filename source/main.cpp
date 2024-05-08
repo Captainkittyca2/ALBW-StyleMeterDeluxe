@@ -952,9 +952,9 @@ namespace mod
         if (meterOn) {
             if (dMeterPtr->mNowOil > oilMaxVar) {dMeterPtr->mNowOil = oilMaxVar; libtp::tp::d_com_inf_game::dComIfG_gameInfo.play.mItemOilCount = oilMaxVar;}
 #ifdef PLATFORM_WII
-            if ((libtp::tp::d_com_inf_game::dComIfGs_isItemFirstBit(0x31) || libtp::tp::d_com_inf_game::dComIfGs_isItemFirstBit(0x30)) && bomba == false && (libtp::tp::m_re_controller_pad::mReCPd::m_pad[0].mPressedButtonFlags & 0x00000002) && countyer < 2 && libtp::tp::d_com_inf_game::dComIfG_gameInfo.save.save_file.player.player_status_a.currentForm == 0)
+            if ((libtp::tp::d_com_inf_game::dComIfGs_isItemFirstBit(0x31) || libtp::tp::d_com_inf_game::dComIfGs_isItemFirstBit(0x30)) && bomba == false && (libtp::tp::m_re_controller_pad::mReCPd::m_pad[0].mPressedButtonFlags & 0x00000002) && countyer < 2 && libtp::tp::d_com_inf_game::dComIfG_gameInfo.save.save_file.player.player_status_a.currentForm == 0 && !rentingTime)
 #else
-            if ((libtp::tp::d_com_inf_game::dComIfGs_isItemFirstBit(0x31) || libtp::tp::d_com_inf_game::dComIfGs_isItemFirstBit(0x30)) && bomba == false && (libtp::tp::m_do_controller_pad::cpadInfo[0].mPressedButtonFlags & libtp::tp::m_do_controller_pad::Button_DPad_Down) && countyer < 2 && libtp::tp::d_com_inf_game::dComIfG_gameInfo.save.save_file.player.player_status_a.currentForm == 0)
+            if ((libtp::tp::d_com_inf_game::dComIfGs_isItemFirstBit(0x31) || libtp::tp::d_com_inf_game::dComIfGs_isItemFirstBit(0x30)) && bomba == false && (libtp::tp::m_do_controller_pad::cpadInfo[0].mPressedButtonFlags & libtp::tp::m_do_controller_pad::Button_DPad_Down) && countyer < 2 && libtp::tp::d_com_inf_game::dComIfG_gameInfo.save.save_file.player.player_status_a.currentForm == 0 && !rentingTime)
 #endif
             {
                 bamba = true;
