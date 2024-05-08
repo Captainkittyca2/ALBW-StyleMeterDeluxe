@@ -3,7 +3,7 @@
 # ALBW-Style Meter++
 A "Twilight Princess" mod that provides the game with core mechanics from "A Link Between Worlds", a 3DS Zelda game.
 
-`Currently only supports TP GC US and TP Wii US 1.2`
+`Currently only supports TP GC US, TP GC PAL and TP Wii US 1.2`
 
 ![](https://github.com/Captainkittyca2/ALBW-StyleMeterDeluxe/blob/master/ImagesAndGIFs/ALBW.png)
 
